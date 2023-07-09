@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>O2Form</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<main>
+
+	<div class="sidebar">
+		<div class="user">
+			<h4> Михаил Мингалёв</h4>
+			<span>Покупатель</span>
+		</div>
+		<div class="selectedContainer">
+			<a href="#"><b>Мой профиль</b></a>
+		</div>
+		<a href="#">Statut Club</a>
+		<a href="#">Заказы</a>
+		<a href="#">Избранные товары</a>
+		<a href="#">Отзывы о товарах</a>
+		<a href="#" class="exit">Выход</a>
+	</div>
+
+	<form> 
+		<h2>Мой профиль</h2>
+		<div class="formPages">
+			<a href="#" class="selectedPage"><b>Личные данные</b></a>
+			<a href="#">Адреса доставки</a>
+			<a href="#">Пароль</a>
+		</div>
+		<p>E-mail<span class="redStar">*</span></p>
+		<input type="mail" name="e-mail">
+		<div class="phone">
+			<div>
+				<p>Номер телефона<span class="redStar">*</span></p>
+				<input type="phone" name="phoneNumber">
+			</div>
+			<div>
+				<p>Дополнительный номер</p>
+				<input type="phone" name="backUpPhone">
+			</div>
+		</div>
+		<p>Фамилия<span class="redStar">*</span></p>
+		<input type="text" name="surname">
+		<p>Имя<span class="redStar">*</span></p>
+		<input type="text" name="name">
+		<p>Отчество</p>
+		<input type="text" name="fathersName">
+		<div>
+			<p>Дата рождения</p>
+			<select class="dayOfBirth">
+				<option value="1" selected>1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			<select class="monthOfBirth">
+				<option value="1" selected>Январь</option>
+				<option value="2">Февраль</option>
+				<option value="3">Март</option>
+				<option value="4">Апрель</option>
+				<option value="5">Май</option>
+				<option value="6">Июнь</option>
+				<option value="7">Июль</option>
+				<option value="8">Август</option>
+				<option value="9">Сентябрь</option>
+				<option value="10">Октябрь</option>
+				<option value="11">Ноябрь</option>
+				<option value="12">Декабрь</option>
+			</select>
+			<select class="yearOfBirth">
+				<option value="1" selected>Я не буду это делать так</option>
+			</select>
+		</div>
+		<div>
+			<p>Пол</p>
+			<a href="#" class="gender checked">Мужской</a>
+			<a href="#" class="gender">Женский</a>
+		</div>
+		<input class="saveChangesButton" type="button" name="saveChanges" value="Сохранить изменения">
+	</form>
+
+</main>
+
+</body>
+</html>

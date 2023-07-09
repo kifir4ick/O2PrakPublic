@@ -1,0 +1,196 @@
+/*.class:checked ~ .class{}
+чекбокс: проверен тогда изменяем .класс{}
+#ff3347 - красный
+#fc6e1d - оранжевый
+rgba(28, 41, 77, 0.2) - серый
+*/
+body{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(28, 41, 77, 0.12);
+	font-family: sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: gray;
+}
+
+h2{
+	margin: 0;
+}
+
+.formPages{
+	display: flex;
+	margin: 20px 0 20px 0;
+	background-color:rgba(28, 41, 77, 0.12);
+	height: 2.6em;
+	padding: 5px;
+	align-items: center;
+	border-radius: 5px;
+}
+.formPages .selectedPage{
+	color: black;
+	display: inline-block;
+	background-color: white;
+	width: 9em;
+	height: 1.9em;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 5px;
+	margin: 2px;
+}
+
+.formPages a{
+	display: inline-block;
+	width: 9em;
+	height: 1.9em;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 5px;
+	margin: 2px;
+}
+
+main{
+	padding-left: 5%;
+	padding-top: 2%;
+	display: flex;	
+}
+
+form{
+	margin-left: 2em;
+	background-color: white;
+	box-sizing: border-box;
+	width: 50em;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-right: 10em;
+}
+
+p{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: gray;
+}
+
+form input{
+	height: 2.5em;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+select{
+	width: 10em;
+	height: 3em;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+
+.phone{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.phone input{
+	width: 22em;
+}
+
+.redStar{
+	color: red;
+}
+.saveChangesButton{
+	width: 16.5em;
+	height: 3em;
+	background-color: #ff7a00;
+	color: white;
+	font-size: 1em;
+}
+
+.gender{
+	display: inline-block;
+	width: 6em;
+	text-align: left;
+	border: 1px solid gray;
+	padding: 1em;
+	margin-bottom: 1em;
+	border-radius: 5px;
+}
+
+.gender.checked{
+	border: 1px solid #ff7a00;
+	color: #ff7a00;
+}
+
+select{
+	size: 5;
+}
+
+/*=========================================*/
+.sidebar{
+	height: 25em;
+	box-sizing: border-box;
+	width: 20%;
+	font-family: sans-serif;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	justify-content: space-evenly;
+	border-radius: 5px;
+}
+
+h4{
+	padding: 0;
+	margin: 0;
+}
+
+hr{
+	margin: 0;
+}
+
+.sidebar a{
+	display: block;
+	border-top: 1px solid gray;
+	width: 90%;
+	margin-left: 5%;
+	padding: 5.5% 0 ; 
+}
+
+.user{
+	border-radius: 5px;
+	box-sizing: border-box;
+	width: auto;
+	background-color: rgba(28, 41, 77, 0.12);
+	margin: 5px 15px ;
+	padding: 10px;
+}
+
+h4{
+	padding: 0;
+	margin: 0;
+}
+
+.selectedContainer{
+	display: flex;
+	align-items: center;
+	border-left: 2px solid #fc6e1d; 
+}
+.selectedContainer a{
+	color: #fc6e1d;
+}
+
+.selected{
+	display: inline-block;
+	height: 100%;
+	border: 0.5px solid #fc6e1d;
+	border-radius: 5px;
+}
+
+.exit{
+	color: #ff3347;
+}
