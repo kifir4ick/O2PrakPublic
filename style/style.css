@@ -12,6 +12,10 @@ body{
 	font-family: sans-serif;
 }
 
+h1{
+	margin-left: 2em;
+}
+
 a{
 	text-decoration: none;
 	color: gray;
@@ -81,6 +85,21 @@ form input{
 	border: 1px solid gray;
 	border-radius: 5px;
 }
+
+input:focus {
+	outline: none;
+}
+
+
+input:hover{
+	border: 1px solid #FF7A00;
+}
+
+.saveChangesButton{
+	cursor: pointer;
+	border:1px solid #FF7A00;
+}
+
 select{
 	width: 10em;
 	height: 3em;
@@ -88,6 +107,10 @@ select{
 	border-radius: 5px;
 	border: 1px solid grey;
 }
+select:hover{
+	border: 1px solid #FF7A00;
+}
+
 
 .phone{
 	margin: 0;
@@ -124,10 +147,15 @@ select{
 .gender.checked{
 	border: 1px solid #ff7a00;
 	color: #ff7a00;
+	position: relative;
+
 }
 
-select{
-	size: 5;
+
+.gender img{
+	position: absolute;
+	bottom: 0.5em;
+	right: 0.5em;
 }
 
 /*=========================================*/
@@ -160,14 +188,30 @@ hr{
 	margin-left: 5%;
 	padding: 5.5% 0 ; 
 }
+.sidebar a:hover{
+	color: #FC6E1D;
+}
 
 .user{
+	display: flex;
 	border-radius: 5px;
 	box-sizing: border-box;
 	width: auto;
 	background-color: rgba(28, 41, 77, 0.12);
 	margin: 5px 15px ;
 	padding: 10px;
+}
+
+.user div{
+	margin-left: 10px;
+}
+
+img{
+	width: 1.5em;
+	height: 1.5em;
+	padding: 5px;
+	background-color: white;
+	border-radius: 100%;
 }
 
 h4{

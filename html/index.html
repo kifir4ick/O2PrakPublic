@@ -9,13 +9,16 @@
 	<script type="text/javascript" src="../js/script.js"></script>
 </head>
 <body>
-
+	<h1>Мой кабинет</h1>
 <main>
 
 	<div class="sidebar">
 		<div class="user">
-			<h4> Михаил Мингалёв</h4>
-			<span>Покупатель</span>
+			<img src="../images/Icon.svg">
+			<div>
+				<h4> Михаил Мингалёв</h4>
+				<span>Покупатель</span>
+			</div>
 		</div>
 		<div class="selectedContainer">
 			<a href="#"><b>Мой профиль</b></a>
@@ -34,12 +37,13 @@
 			<a href="#">Адреса доставки</a>
 			<a href="#">Пароль</a>
 		</div>
+
 		<p>E-mail<span class="redStar">*</span></p>
-		<input type="mail" name="e-mail">
+		<input type="mail" name="e-mail" required>
 		<div class="phone">
 			<div>
 				<p>Номер телефона<span class="redStar">*</span></p>
-				<input type="phone" name="phoneNumber">
+				<input type="phone" name="phoneNumber" required>
 			</div>
 			<div>
 				<p>Дополнительный номер</p>
@@ -47,9 +51,9 @@
 			</div>
 		</div>
 		<p>Фамилия<span class="redStar">*</span></p>
-		<input type="text" name="surname">
+		<input type="text" name="surname" required>
 		<p>Имя<span class="redStar">*</span></p>
-		<input type="text" name="name">
+		<input type="text" name="name" required>
 		<p>Отчество</p>
 		<input type="text" name="fathersName">
 		<div>
@@ -101,13 +105,13 @@
 				<option value="11">Ноябрь</option>
 				<option value="12">Декабрь</option>
 			</select>
-			<select class="yearOfBirth">
+			<select id="yearOfBirth">
 				<option value="1" selected>Я не буду это делать так</option>
 			</select>
 		</div>
 		<div>
 			<p>Пол</p>
-			<a href="#" class="gender checked">Мужской</a>
+			<a href="#" class="gender checked">Мужской<img src="../images/checkMark.svg"></a>
 			<a href="#" class="gender">Женский</a>
 		</div>
 		<input class="saveChangesButton" type="button" name="saveChanges" value="Сохранить изменения">
