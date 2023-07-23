@@ -134,28 +134,44 @@ select:hover{
 	font-size: 1em;
 }
 
-.gender{
-	display: inline-block;
-	width: 6em;
-	text-align: left;
-	border: 1px solid gray;
-	padding: 1em;
-	margin-bottom: 1em;
-	border-radius: 5px;
-}
-
-.gender.checked{
-	border: 1px solid #ff7a00;
-	color: #ff7a00;
+.form_radio_btn {
+	width: 10.5em;
 	position: relative;
-
+	display: inline-block;
+	margin-bottom: 1em;
 }
-
-
-.gender img{
+.form_radio_btn input[type=radio] {
+	display: none;
+	width: 6em;
+}
+.form_radio_btn label {
+	width: 7em;
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 1.5em;
+	line-height: 3em;
+	border: 1px solid #999;
+	border-radius: 6px;
+	user-select: none;
+}
+.form_radio_btn input[type=radio]:checked + label {
+	background: none;
+	border: 1px solid #fc6e1d;
+}
+.form_radio_btn label:hover {
+	color: #666;
+}
+.checkMark{
+	background: none;
 	position: absolute;
-	bottom: 0.5em;
-	right: 0.5em;
+	right: 1em;
+	top: 0.7em;
+	display: none;
+	border: none;
+	padding: 0;
+}
+.form_radio_btn input[type=radio]:checked ~ .checkMark{
+	display: block;
 }
 
 /*=========================================*/

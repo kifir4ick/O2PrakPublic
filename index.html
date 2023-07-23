@@ -6,14 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>O2Form</title>
 	<link rel="stylesheet" href="style/style.css">
-	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
 	<h1>Мой кабинет</h1>
 <main>
 	<div class="sidebar">
 		<div class="user">
-			<img src="../images/Icon.svg">
+			<img src="images/Icon.svg">
 			<div>
 				<h4> Михаил Мингалёв</h4>
 				<span>Покупатель</span>
@@ -28,7 +28,7 @@
 		<a href="#">Отзывы о товарах</a>
 		<a href="#" class="exit">Выход</a>
 	</div>
-	<form> 
+	<form action="script.php" method="post"> 
 		<h2>Мой профиль</h2>
 		<div class="formPages">
 			<a href="#" class="selectedPage"><b>Личные данные</b></a>
@@ -36,15 +36,15 @@
 			<a href="#">Пароль</a>
 		</div>
 		<p>E-mail<span class="redStar">*</span></p>
-		<input type="mail" name="e-mail" required>
+		<input type="email" name="email" required>
 		<div class="phone">
 			<div>
 				<p>Номер телефона<span class="redStar">*</span></p>
-				<input type="phone" name="phoneNumber" required>
+				<input type="phone" name="phoneNumber" required pattern="^\+7[1-9]{10}$">
 			</div>
 			<div>
 				<p>Дополнительный номер</p>
-				<input type="phone" name="backUpPhone">
+				<input type="phone" name="backUpPhone" pattern="^\+7[1-9]{10}$">
 			</div>
 		</div>
 		<p>Фамилия<span class="redStar">*</span></p>
@@ -55,7 +55,7 @@
 		<input type="text" name="fathersName">
 		<div>
 			<p>Дата рождения</p>
-			<select class="dayOfBirth">
+			<select class="dayOfBirth" name="dayOfBirth">
 				<option value="1" selected>1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -88,7 +88,7 @@
 				<option value="30">30</option>
 				<option value="31">31</option>
 			</select>
-			<select class="monthOfBirth">
+			<select class="monthOfBirth" name="monthOfBirth">
 				<option value="1" selected>Январь</option>
 				<option value="2">Февраль</option>
 				<option value="3">Март</option>
@@ -102,17 +102,25 @@
 				<option value="11">Ноябрь</option>
 				<option value="12">Декабрь</option>
 			</select>
-			<select id="yearOfBirth">
-				<option value="1" selected>Я не буду это делать так же</option>
+			<select id="yearOfBirth" name="yearOfBirth">
 			</select>
 		</div>
 		<div>
 			<p>Пол</p>
-			<a href="#" class="gender checked">Мужской<img src="../images/checkMark.svg"></a>
-			<a href="#" class="gender">Женский</a>
+			<div class="form_radio_btn">
+				<input type="radio" id="radio-male" class="gender" name ="gender" value="male" checked>
+				<label for="radio-male">Мужской</label>
+				<img class="checkMark" src="images/checkMark.svg">
+			</div>
+			<div class="form_radio_btn">
+				<input type="radio" id="radio-female" name ="gender" value="female" class="gender">
+				<label for="radio-female">Женский</label>
+				<img class="checkMark" src="images/checkMark.svg">
+			</div>
 		</div>
-		<input class="saveChangesButton" type="button" name="saveChanges" value="Сохранить изменения">
+		<input class="saveChangesButton" type="submit" name="saveChanges" value="Сохранить изменения">
 	</form>
 </main>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
